@@ -1,0 +1,21 @@
+
+{
+    "title": "User Registration",
+    "fields": [
+      { "label": "Name", "type": "text", "name": "name", "required": true },
+      { "label": "Age", "type": "number", "name": "age" },
+      { "label": "Date of Birth", "type": "date", "name": "dateofbirth" },
+      { "label": "Subscribe", "type": "checkbox", "name": "subscribe" },
+      {
+        "label": "Gender",
+        "type": "select",
+        "name": "gender",
+        "options": ["Male", "Female", "Other"]
+      },
+      {
+        "label": "About You",
+        "type": "textarea",
+        "name": "aboutyou"
+      }
+    ]
+  }
