@@ -1,21 +1,39 @@
 
 {
-    "title": "User Registration",
-    "fields": [
-      { "label": "Name", "type": "text", "name": "name", "required": true },
-      { "label": "Age", "type": "number", "name": "age" },
-      { "label": "Date of Birth", "type": "date", "name": "dateofbirth" },
-      { "label": "Subscribe", "type": "checkbox", "name": "subscribe" },
-      {
-        "label": "Gender",
-        "type": "select",
-        "name": "gender",
-        "options": ["Male", "Female", "Other"]
-      },
-      {
-        "label": "About You",
-        "type": "textarea",
-        "name": "aboutyou"
-      }
-    ]
-  }
+  "title": "User Registration",
+  "fields": [
+    { "label": "Name", "type": "text", "name": "name", "required": true },
+    { "label": "Username", "type": "text", "name": "username", "required": true },
+    { "label": "Email", "type": "text", "name": "email", "required": true },
+    { "label": "Password", "type": "password", "name": "password", "required": true },
+    { "label": "Confirm Password", "type": "password", "name": "confirmPassword", "required": true },
+    { "label": "Phone Number", "type": "text", "name": "phone", "required": true },
+    { "label": "Age", "type": "number", "name": "age", "required": true },
+    { "label": "Date of Birth", "type": "date", "name": "dateofbirth", "required": true },
+    {
+      "label": "Gender",
+      "type": "select",
+      "name": "gender",
+      "options": ["Male", "Female", "Other"],
+      "required": true
+    },
+    {
+      "label": "Occupation",
+      "type": "select",
+      "name": "occupation",
+      "options": ["Student", "Professional", "Retired", "Other"],
+      "required": true
+    },
+    {
+      "label": "Country",
+      "type": "select",
+      "name": "country",
+      "options": ["USA", "India", "UK", "Canada", "Other"],
+      "required": true
+    },
+    { "label": "About You", "type": "textarea", "name": "aboutyou", "required": true },
+    { "label": "Subscribe to Newsletter", "type": "checkbox", "name": "subscribe", "required": true },
+    { "label": "Accept Terms & Conditions", "type": "checkbox", "name": "terms", "required": true }
+  ]
+}
+

@@ -9,11 +9,10 @@
         "type": "select",
         "name": "gender",
         "options": ["Male", "Female", "Other"]
-      },
-      { "label": "Bio", "type": "textarea", "name": "bio", "required": true },
-    { "label": "Date of Birth", "type": "date", "name": "dob", "required": true }
+      }
+   
     ]
   }
 
   
-  
+ 

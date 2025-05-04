@@ -1,7 +1,8 @@
 // src/App.tsx
 import React from "react";
 import FormRenderer from "./components/FormRenderer";
-import schema from "./schema.json";
+// import schema from "./schema.json";
+import schema from "./schemaNew.json"
 
 function App() {
   return (

@@ -4,6 +4,7 @@ import CheckboxField from "./fields/CheckboxField";
 import SelectField from "./fields/SelectField";
 import TextAreaField from "./fields/TextAreaField";
 import DateField from "./fields/DateField";
+import PasswordField from "./fields/PasswordField";
 
 const FieldRenderer = ({ field, register, errors }: any) => {
   const props = { field, register, error: errors[field.name] };
@@ -15,6 +16,7 @@ const FieldRenderer = ({ field, register, errors }: any) => {
     case "select": return <SelectField {...props} />;
     case "textarea": return <TextAreaField {...props} />;
     case "date": return <DateField {...props} />;
+    case "password": return <PasswordField {...props} />;
     default: return null;
   }
 };
