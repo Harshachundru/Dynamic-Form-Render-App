@@ -61,7 +61,11 @@ export const buildZodSchema = (schema: FormSchema) => {
         break;
 
       case "checkbox":
-        zodType = z.boolean();
+        zodType = field.required
+          ? z.literal(true, {
+            errorMap: () => ({ message: `${field.label} is required` }),
+          })
+          : z.boolean();
         break;
 
       case "select":
@@ -82,7 +86,7 @@ export const buildZodSchema = (schema: FormSchema) => {
     shape[field.name] = zodType;
   });
 
-  // ✅ Confirm password must match password
+  //To confirm that the password should match
   return z.object(shape).refine(
     (data) => data.password === data.confirmPassword,
     {
